@@ -1,0 +1,15 @@
+@mixin presets-standard {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	-webkit-text-size-adjust: 100%;
+}
+
+@mixin flex-space-between {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}

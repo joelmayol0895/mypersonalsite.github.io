@@ -1,0 +1,70 @@
+.portfolio {
+    padding: 3%;
+
+    h2 {
+        margin: 0 auto 7%;
+        text-align: center;
+    }
+
+    .slick-dots {
+        button {
+            background-color: $color-secondary;
+            font-size: 10px;
+            color: #fff;
+        }
+
+        .slick-active {
+
+            button {
+                background-color: $color-primary;
+            }
+            
+        }
+    }
+
+    .portf-holder {
+        text-align: center;
+
+        .rslides {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            position: relative;
+
+            .slick-prev {
+                bottom: 0;
+                left: 137px;
+                top: unset;
+            }
+            .slick-next {
+                bottom: 0;
+                right: 137px;
+                top: unset;
+            }
+
+            [class^="portf-"]{
+                margin: 0 10px 40px;
+
+                a {
+                    display: flex;
+                    align-items: flex-start;
+                    overflow: hidden;
+                    height: 350px;
+                    position: relative;
+
+                    img {
+                        top: 0;
+                        left: 0;
+                        transition: 2s all ease-in-out 0s;
+                        position: absolute;
+                    }
+
+                    &:hover img {
+                        top: 100%;
+                        transform: translate(0,-100%);
+                    }
+                }
+            }
+        }
+    }
+}

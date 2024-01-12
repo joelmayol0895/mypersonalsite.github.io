@@ -1,0 +1,147 @@
+.resume {
+       
+    .resume-holder {
+        max-width: 700px;
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        background:$color-default;
+        margin: 0 auto;
+
+        h2 {
+            font-size: $font-reg;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-size: $font-sm;
+        }   
+
+        .cv-holder-left {
+            width: 250px;
+            padding: 20px 15px;
+            background-color: $bgcolor-primary;
+            font-size: $font-xs;
+
+            [class^="cv-left-box"] {
+                border-bottom: 1px solid;
+                margin-bottom: 30px;
+                padding-bottom: 30px;
+
+                h2 {
+                   color: $color-secondary; 
+                }
+            }
+
+            .cv-left-box-contact {
+                .fa-solid {
+                    margin-right: 10px;
+                }
+            }
+
+
+            .cv-left-box-skills {
+                border: 0;
+                padding: 0;
+                margin: 0;
+
+                li {
+                    progress {
+                        width: 100%;
+                        height: 16px;
+                        color: $color-primary;
+                        background: $color-primary;
+                        height: 6px;
+                    }
+
+                    progress::-moz-progress-bar {
+                        background: $color-primary;
+                    }
+
+                    progress::-webkit-progress-value {
+                        background: $color-primary;
+                    }
+                }
+            }
+
+            .profile {
+                text-align: center;
+
+                h1 {
+                    font-size: $font-m;
+                    text-transform: uppercase;
+                }
+
+                img {
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 50%;
+                    margin-bottom: 15px;
+                }
+            }
+
+            [class^="educ-level"] {
+                margin-bottom: 10px;
+            }
+        }
+    
+        .cv-holder-right {
+            width: calc(100% - 255px);
+            color: $color-third;
+            font-size: $font-xs;
+            padding: 20px 15px;
+
+            [class^="cv-right-box"] {
+                border-bottom: 1px solid;
+                margin-bottom: 30px;
+                padding-bottom: 30px;
+            }
+
+            .cv-right-box-work-exp {
+                border: 0;
+                padding: 0;
+                margin: 0;
+            }
+
+            h2 {
+                color: $color-primary;
+            }
+
+            .exp-holder {
+                h3 {
+                    font-size: 12px;
+                    color: $color-secondary;
+                }
+                h4 {
+                    font-weight: 700;
+                }
+
+                ul {
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: space-between;
+
+                    li {
+                        width: 48%;
+                        position: relative;
+                        padding-left: 15px;
+
+                        &::before {
+                            content: "";
+                            border-radius: 50%;
+                            width: 7px;
+                            height: 7px;
+                            background-color: $color-primary;
+                            position: absolute;
+                            left: 0;
+                            top: 9px;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+
+}
